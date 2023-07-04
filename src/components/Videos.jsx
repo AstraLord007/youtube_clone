@@ -13,7 +13,7 @@ const Videos = ({ videos, direction }) => {
                 </Box>
             ))}
         </Stack>
-    );
+    )
 }
 
 export default Videos;
