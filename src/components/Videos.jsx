@@ -1,8 +1,8 @@
 import { Stack, Box } from '@mui/material';
-import { ChannelCard, VideoCard } from "./";
+import { ChannelCard, VideoCard, Loader } from "./";
 
 const Videos = ({ videos, direction }) => {
-      if(!videos?.length) return 'Loading...';
+      if(!videos?.length) return <Loader />;
     console.log(videos)
     return (
         <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
